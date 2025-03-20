@@ -1,0 +1,134 @@
+.gradient-background {
+  background: linear-gradient(300deg, #191717, #f1efef, #ccc8aa);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url(./Images/hero-background2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about-me {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+h1 {
+  font-family: "Shippori Mincho B1", serif;
+  font-size: 52px;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 400;
+  font-size: 48px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.skills {
+  font-size: 24px;
+}
+
+#resume {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  height: 30px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 220px;
+}
+
+.project-img {
+  height: 20em;
+  width: 35em;
+  border-radius: 10%;
+}
+
+.contact-img {
+  height: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  .project-img {
+    height: 400px;
+    width: 500px;
+    border-radius: 10%;
+  }
+}
+
+.grid-item {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  gap: 40px;
+}
+
+.hobby-item {
+  text-align: left;
+}
+
+.hobby-text {
+  text-align: left;
+}
+
+.hobby-img {
+  height: 150px;
+  border-radius: 10%;
+  float: left;
+  margin-right: 30px;
+}
