@@ -57,6 +57,9 @@ p {
   text-align: center;
 }
 
+#skills {padding-left: 40px;
+padding-right: 40px;}
+
 .skills {
   font-size: 26px;
 }
